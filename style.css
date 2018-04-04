@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    background-color: #313234;
+}
+
+h2,
+h1 {
+    color: #414244;
+}
+
+
+/* header, menu, navigation */
+
+
+/* SASS nesting */
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+header ul li a {
+    line-height: 70px;
+    display: inline-block;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    background-color: #414244;
+}
+
+header img {
+    padding: 10px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+header .photo {
+    max-width: 150px;
+    display: inline-block;
+    height: auto;
+    padding: 10px 0;
+}
+
+
+/* slogan and hero */
+
+.slogan {
+    max-width: 800px;
+    float: right;
+    background-color: rgba(49, 51, 50, 0.5);
+    width: 50%;
+    margin-top: 50px;
+}
+
+.hero {
+    background-image: url(https://static.pexels.com/photos/169573/pexels-photo-169573.jpeg);
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.slogan h1 {
+    padding: 15px;
+    color: white;
+    font-size: 220%;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.slogan p {
+    font-weight: 800;
+    font-size: 110%;
+    line-height: 50px;
+}
+
+
+/* global style for all containers */
+
+section>.container {
+    margin: 90px auto;
+    text-align: center;
+    max-width: 1200px;
+}
+
+
+/* big icons on the middle */
+
+.fa-laptop,
+.fa-search-plus,
+.fa-cogs {
+    padding: 50px;
+    font-size: 400%;
+    border-radius: 20%;
+    background-color: #313332;
+    color: white;
+}
+
+.tag {
+    margin-top: 30px;
+}
+
+.advantages p {
+    margin-top: 10px;
+}
+
+.advantages .container i:hover {
+    background-color: darkturquoise;
+}
+
+
+/* heading and short text on the middle */
+
+.text p {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #a2a3a3;
+}
+
+.text h1 {
+    font-size: 300%;
+}
+
+
+/* gallery */
+
+.gallery .col-2 {
+    padding: 0;
+    margin: 0;
+}
+
+.gallery .img_container {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+
+
+/* gallery layer nad hovers */
+
+.gallery .layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    margin: 0 auto;
+}
+
+.gallery .layer i {
+    margin: 2px;
+}
+
+.gallery .layer div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery .layer:hover {
+    opacity: 0.7;
+}
+
+
+/* Crew */
+
+.crew img {
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.crew h2 {
+    margin-top: 15px;
+}
+
+
+/* Crew layer and hovers */
+
+
+/* SASS extend */
+
+.crew .img_container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.crew .layer {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #313332;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease 70ms, transform 1s ease;
+}
+
+.crew .layer h2 {
+    color: white;
+    font-family: cursive;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.crew .layer:hover {
+    opacity: 0.7;
+    transform: rotate(360deg);
+}
+
+
+/* section with title and img */
+
+.title {
+    background-color: #313234;
+    color: white;
+    padding-top: 1px;
+}
+
+.title img {
+    max-width: 100%;
+    border-radius: 0 35px 0 0;
+    height: auto;
+}
+
+.title h1 {
+    float: left;
+    font-size: 220%;
+    color: white;
+}
+
+.title p {
+    font-size: 90%;
+}
+
+
+/* section with numbers */
+
+.numbers h1 {
+    font-size: 300%;
+}
+
+.numbers p {
+    color: darkturquoise;
+}
+
+
+/* footer */
+
+.footer .container {
+    margin-bottom: 0;
+}
+
+.footer p,
+.footer h1 {
+    color: white;
+    text-align: left;
+}
+
+.footer p {
+    font-size: 90%;
+}
+
+.footer h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer {
+    background-color: #313234;
+}
+
+.footer h2 {
+    color: white;
+    text-align: left;
+    font-size: 110%;
+    padding-bottom: 20px;
+}
+
+p.numbers {
+    margin-top: 13px;
+}
+
+p.mail {
+    margin-top: 5px;
+}
+
+.footer i.fa {
+    color: white;
+    margin-right: 15px;
+    background-color: skyblue;
+    height: 45px;
+    width: 50px;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* copyrights */
+
+.copyrights {
+    text-align: center;
+    background-color: #414244;
+}
+
+.copyrights h2 {
+    color: white;
+    padding: 3px;
+    font-size: 90%;
+}
+
+
+/*media queries */
+
+@media only screen and (max-width: 768px) {
+    .slogan {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header>nav>ul {
+        float: none;
+        display: block;
+    }
+    header>nav>ul>li {
+        display: block;
+    }
+    header>nav>ul>li>a {
+        display: block;
+    }
+    nav:before,
+    nav:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    header>nav {
+        text-align: center;
+    }
+}
+
+
+/*# sourceMappingURL=sass.css.map */
